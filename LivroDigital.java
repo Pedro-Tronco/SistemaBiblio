@@ -16,7 +16,10 @@ public final class LivroDigital extends Livro {
         this.formatoArquivo = formatoArquivo;
     }
     public String toString() {
-        return this.getTitulo() + " - Formato: " + this.getFormatoArquivo() + " - Tamanho: " + this.getTamanhoArquivo();
+        return this.getTitulo() + "(Livro " + this.getFormato() + ") - Formato: " + this.getFormatoArquivo() + " - Tamanho: " + this.getTamanhoArquivo();
+    }
+    public String getFormato(){
+        return "Digital";
     }
 
 }

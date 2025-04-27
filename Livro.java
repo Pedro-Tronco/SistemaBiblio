@@ -36,7 +36,6 @@ public abstract class Livro {
     public void setNumPaginas(int numPaginas) {
         this.numPaginas = numPaginas;
     }
-    public String toString(){
-        return this.titulo;
-    }
+    public abstract String toString();
+    public abstract String getFormato();
 }

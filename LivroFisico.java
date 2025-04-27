@@ -23,6 +23,9 @@ public final class LivroFisico extends Livro {
         this.condicao = condicao;
     }
     public String toString() {
-        return this.getTitulo() + " - Condição: " + this.getCondicao() + "/10 - Nº de Exemplares: " + this.getNumExemplares();
+        return this.getTitulo() + "(Livro " + this.getFormato() + ") - Condição: " + this.getCondicao() + "/10 - Nº de Exemplares: " + this.getNumExemplares();
+    }
+    public String getFormato(){
+        return "Físico";
     }
 }

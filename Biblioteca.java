@@ -267,7 +267,7 @@ public class Biblioteca {
         return mensagem;
     }
 
-    public int calcularTempoPublicacao(int anoPublicacao){
+    public final int calcularTempoPublicacao(int anoPublicacao){
         final int ANO_ATUAL = Year.now().getValue();
         anoPublicacao = ANO_ATUAL - anoPublicacao;
         return anoPublicacao;
